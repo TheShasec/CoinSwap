@@ -1,0 +1,40 @@
+.dropdownMainDiv {
+    width: 200px;
+    height: 250px;
+}
+
+.dropdownCurrencysDiv {
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.dropdownCurrencysDiv p {
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    transition: all 100ms linear;
+    height: 100px;
+}
+
+.dropdownCurrencysDiv p:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdownText {
+    box-shadow: 0 0 5px 1px white;
+    color: white;
+    border-radius: 4px;
+    padding: 0px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
