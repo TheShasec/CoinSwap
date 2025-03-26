@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Input from "./Components/Inputs/Input";
 import Dropdown from "./Components/Dropdowns/Dropdown";
+let apiKey = "Your Api Key";
 function App() {
   const [allCurrencys, setAllCurrencys] = useState({});
   const [userValue, setUserValue] = useState(0);
@@ -13,7 +14,7 @@ function App() {
   const getCurrency = async () => {
     try {
       const res = await axios.get(
-        `https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_8ri7dyGXcsVcY8QN9HPoM3DgLAOADQIyhiqvpfjc&base_currency=${fromCurrency}`
+        `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&base_currency=${fromCurrency}`
       );
 
       setAllCurrencys(res.data.data);
