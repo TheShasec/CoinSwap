@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Input from "./Components/Inputs/Input";
 import Dropdown from "./Components/Dropdowns/Dropdown";
-let apiKey = "Your Api Key";
+let apiKey = "Your Free Currency Api Key";
 function App() {
   const [allCurrencys, setAllCurrencys] = useState({});
   const [userValue, setUserValue] = useState(0);
